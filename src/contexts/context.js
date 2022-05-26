@@ -14,6 +14,7 @@ if (!isFetched) {
     fetch("https://jsonplaceholder.typicode.com/comments")
     .then(response => response.json())
     .then(post => setPosts(post));
+    
 }
 }, [isFetched])
 
